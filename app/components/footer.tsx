@@ -21,21 +21,21 @@ export default function Footer(): JSX.Element {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<Instagram className="w-8 h-8 text-dark" />
+							<Instagram className="w-8 h-8 text-dark hover:scale-110 duration-300" />
 						</a>
 						<a
 							href="https://www.facebook.com/losaldanceprogram/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<Facebook className="w-8 h-8 text-dark" />
+							<Facebook className="w-8 h-8 text-dark hover:scale-110 duration-300" />
 						</a>
 						<a
 							href="https://www.tiktok.com/@losaldanceprogram?lang=en"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<Tiktok className="w-8 h-8 text-dark" />
+							<Tiktok className="w-8 h-8 text-dark hover:scale-110 duration-300" />
 						</a>
 					</div>
 				</div>
