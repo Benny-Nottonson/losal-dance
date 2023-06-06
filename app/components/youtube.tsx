@@ -15,9 +15,6 @@ export default function YoutubeVideo({ videoId }: { videoId: string }) {
 			autoplay: 1,
 		},
 	};
-	window.addEventListener("resize", () => {
-		setWidth(window.innerWidth * 0.44);
-	});
 
 	return <YouTube videoId={videoId} opts={opts} onReady={_onReady} />;
 }
