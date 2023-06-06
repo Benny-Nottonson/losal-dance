@@ -43,7 +43,7 @@ export default function HamburgerMenu({
 				</svg>
 			</button>
 			<div
-				className={`absolute z-0 w-70 bg-white/75 translate-y-48 text-xl py-2 mt-2 rounded-md shadow-lg right-0 origin-top-right ring-1 ring-black ring-opacity-5 focus:outline-none ${
+				className={`absolute z-0 w-70 bg-white/75 translate-y-48 text-xl mt-2 rounded-md shadow-lg -right-16 origin-top-right ring-1 ring-black ring-opacity-5 focus:outline-none ${
 					open ? "block" : "hidden"
 				}`}
 			>
