@@ -33,6 +33,7 @@
     "window": "^4.2.7"
   },
   "devDependencies": {
-    "@types/react-burger-menu": "^2.8.3"
+    "@types/react-burger-menu": "^2.8.3",
+    "file-loader": "^6.2.0"
   }
 }
