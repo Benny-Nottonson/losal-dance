@@ -57,7 +57,7 @@ export const Navigation: React.FC = () => {
 	return (
 		<nav
 			ref={ref}
-			className="block z-50 flex items-center justify-center w-full h-16 px-20 border-b-2 border-zinc-400 bg-transparent"
+			className="block z-50 flex items-center justify-center w-full h-16 px-20 border-b-2 border-zinc-400 bg-black"
 		>
 			<div className="flex items-center justify-between w-full h-full space-x-10">
 				<div className="flex items-center justify-start w-full h-full">
