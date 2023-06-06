@@ -2,6 +2,7 @@
 import YoutubeVideo from "./components/youtube";
 import Carousel from "./components/carousel";
 import { CircleDollarSign } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
 	return (
@@ -22,32 +23,40 @@ export default function Home() {
 						Support the dance program!
 					</h1>
 					<div className="mb-4 grid text-center lg:mb-0 lg:grid-cols-2 lg:text-center h-auto">
-						<a
+						<Link
 							href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-							className="group rounded-lg border border-transparent px-16 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+							className="group"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<h2 className={"mb-3 text-2xl font-semibold text-green-400 group-hover:scale-110 duration-300"}>
+							<h2
+								className={
+									"mb-3 text-2xl font-semibold group-hover:scale-110 duration-300"
+								}
+							>
 								Venmo{" "}
 								<span className="inline-block translate-y-1.5 transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
 									<CircleDollarSign size={24} />
 								</span>
 							</h2>
-						</a>
-						<a
+						</Link>
+						<Link
 							href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-							className="group rounded-lg border border-transparent px-16 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
+							className="group"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<h2 className={"mb-3 text-2xl font-semibold text-green-400 group-hover:scale-110 duration-300"}>
+							<h2
+								className={
+									"mb-3 text-2xl font-semibold group-hover:scale-110 duration-300"
+								}
+							>
 								Paypal{" "}
 								<span className="inline-block translate-y-1.5 transition-transform group-hover:translate-x-1 motion-reduce:transform-none duration-300">
 									<CircleDollarSign size={24} />
 								</span>
 							</h2>
-						</a>
+						</Link>
 					</div>
 				</section>
 			</section>

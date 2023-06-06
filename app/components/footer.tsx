@@ -12,9 +12,7 @@ export default function Footer(): JSX.Element {
 					</h1>
 				</div>
 				<div className="flex flex-col items-center justify-center w-full h-40 ml-0">
-					<h1 className="text-xl font-bold text-center text-dark">
-						Follow us
-					</h1>
+					<h1 className="text-xl font-bold text-center text-dark">Follow us</h1>
 					<div className="flex items-center justify-center w-full h-20 space-x-10 ">
 						<a
 							href="https://www.instagram.com/losaldanceprogram/"
