@@ -2,7 +2,7 @@
 import YoutubeVideo from "./components/youtube";
 import Carousel from "./components/carousel";
 import { CircleDollarSign } from "lucide-react";
-import Link from "next/link";
+import { Button } from "@ariakit/react";
 
 export default function Home() {
 	return (
@@ -14,7 +14,7 @@ export default function Home() {
 						We are Los Al Dance
 					</h1>
 				</section>
-				<section className="pt-8">
+				<section className="pt-8 pb-8">
 					<YoutubeVideo videoId="BVCNGxNCWzI" />
 				</section>
 				<Carousel />
@@ -23,11 +23,11 @@ export default function Home() {
 						Support the dance program!
 					</h1>
 					<div className="mb-4 grid text-center lg:mb-0 lg:grid-cols-2 lg:text-center h-auto">
-						<Link
-							href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+						<Button
 							className="group"
-							target="_blank"
-							rel="noopener noreferrer"
+							onClick={() => {
+								window.open("https://venmo.com/LosAlDance");
+							}}
 						>
 							<h2
 								className={
@@ -39,12 +39,14 @@ export default function Home() {
 									<CircleDollarSign size={24} />
 								</span>
 							</h2>
-						</Link>
-						<Link
-							href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+						</Button>
+						<Button
 							className="group"
-							target="_blank"
-							rel="noopener noreferrer"
+							onClick={() => {
+								window.open(
+									"https://www.paypal.com/donate?hosted_button_id=9Z9Z9Z9Z9Z9Z9",
+								);
+							}}
 						>
 							<h2
 								className={
@@ -56,7 +58,7 @@ export default function Home() {
 									<CircleDollarSign size={24} />
 								</span>
 							</h2>
-						</Link>
+						</Button>
 					</div>
 				</section>
 			</section>
