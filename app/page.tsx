@@ -9,7 +9,8 @@ export default function Home() {
 			<section className="flex flex-col items-center justify-center w-full h-auto space-y-4">
 				<section className="flex flex-col items-center justify-center w-full h-auto bg-purple-950">
 					<h1 className="text-slate-300 text-center text-2xl italic">
-						We are artists <br /> We are athletes <br /> We are musicians <br /> We are Los Al Dance
+						We are artists <br /> We are athletes <br /> We are musicians <br />{" "}
+						We are Los Al Dance
 					</h1>
 				</section>
 				<section className="w-auto">
@@ -19,7 +20,7 @@ export default function Home() {
 				<section>
 					<h1 className="text-slate-300 text-center text-2xl text-slate-100	">
 						Support the dance program
-					</h1>	
+					</h1>
 					<div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-2 lg:text-left">
 						<a
 							href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"

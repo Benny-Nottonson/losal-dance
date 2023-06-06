@@ -3,7 +3,7 @@ import { Inconsolata } from "next/font/google";
 import Navigation from "./components/nav";
 import Footer from "./components/footer";
 
-const inconsolata = Inconsolata({ subsets: ["latin"] , weight: "700" });
+const inconsolata = Inconsolata({ subsets: ["latin"], weight: "700" });
 
 export const metadata = {
 	title: "Create Next App",
