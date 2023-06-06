@@ -57,14 +57,14 @@ export const Navigation: React.FC = () => {
 	return (
 		<nav
 			ref={ref}
-			className="block z-50 flex items-center justify-center w-full h-16 px-20 border-b-2 border-zinc-400 bg-black"
+			className="block z-50 flex items-center justify-center w-full h-16 px-20 border-b-4 border-primary bg-white"
 		>
 			<div className="flex items-center justify-between w-full h-full space-x-10">
 				<div className="flex items-center justify-start w-full h-full">
 					{!isHome && (
 						<Link
 							href="/"
-							className="duration-200 text-zinc-300 hover:text-zinc-100"
+							className="duration-200 text-dark hover:scale-110 hover:duration-300"
 						>
 							<ArrowLeft className="w-6 h-6 " />
 						</Link>

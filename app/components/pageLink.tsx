@@ -14,7 +14,7 @@ export default function PageLink({
 		<Link
 			href={`/${title.toLowerCase()}`}
 			className={`duration-200 ${
-				isCurrent ? "text-zinc-100" : "text-zinc-400 hover:text-zinc-100"
+				isCurrent ? "text-primary hover:scale-110 hover:duration-300" : "text-dark hover:scale-110 hover:duration-300"
 			}`}
 		>
 			{title}

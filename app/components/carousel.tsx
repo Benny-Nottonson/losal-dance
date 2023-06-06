@@ -5,7 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 export default class NextJsCarousel extends Component {
 	render() {
 		return (
-			<div>
+			<div className="bg-white">
 				<Carousel>
 					<div>
 						<img src="i1.jpeg" alt="image1" />

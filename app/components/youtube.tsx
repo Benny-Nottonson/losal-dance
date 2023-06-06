@@ -4,7 +4,7 @@ import YouTube from "react-youtube";
 export default function YoutubeVideo({ videoId }: { videoId: string }) {
 	const [width, setWidth] = React.useState(0);
 	React.useEffect(() => {
-		setWidth(window.innerWidth * 0.8);
+		setWidth(window.innerWidth * 0.44);
 	}, []);
 	const vidHeight = width * 0.5625;
 	const vidWidth = width;

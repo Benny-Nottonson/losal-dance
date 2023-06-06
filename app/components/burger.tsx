@@ -20,7 +20,7 @@ export default function HamburgerMenu({
 	return (
 		<div className="relative flex flex-col items-end justify-center w-12 h-12">
 			<button
-				className="absolute z-10 w-12 h-12 p-2 text-zinc-100 rounded-full focus:outline-none"
+				className="absolute z-10 w-12 h-12 p-2 text-dark rounded-full focus:outline-none"
 				onClick={toggleMenu}
 			>
 				<span className="sr-only">Open main menu</span>
@@ -43,7 +43,7 @@ export default function HamburgerMenu({
 				</svg>
 			</button>
 			<div
-				className={`absolute z-0 w-70 bg-slate-800/75 translate-y-48 text-xl py-2 mt-2 rounded-md shadow-lg right-0 origin-top-right ring-1 ring-black ring-opacity-5 focus:outline-none ${
+				className={`absolute z-0 w-70 bg-white/75 translate-y-48 text-xl py-2 mt-2 rounded-md shadow-lg right-0 origin-top-right ring-1 ring-black ring-opacity-5 focus:outline-none ${
 					open ? "block" : "hidden"
 				}`}
 			>
