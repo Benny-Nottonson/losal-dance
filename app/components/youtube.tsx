@@ -1,5 +1,5 @@
 import React from "react";
-import YouTube from "react-youtube";
+import YouTube, { YouTubeEvent } from "react-youtube";
 
 export default function YoutubeVideo({ videoId }: { videoId: string }) {
 	const [width, setWidth] = React.useState(0);
@@ -15,10 +15,13 @@ export default function YoutubeVideo({ videoId }: { videoId: string }) {
 			autoplay: 1,
 		},
 	};
+	window.addEventListener("resize", () => {
+		setWidth(window.innerWidth * 0.44);
+	});
 
 	return <YouTube videoId={videoId} opts={opts} onReady={_onReady} />;
 }
 
-function _onReady(event: any) {
+function _onReady(event: YouTubeEvent) {
 	event.target.pauseVideo();
 }
