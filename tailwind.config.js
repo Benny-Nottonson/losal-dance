@@ -13,8 +13,8 @@ module.exports = {
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},
 			height: {
-				"pdf": "34rem",
-			}
+				pdf: "34rem",
+			},
 		},
 		colors: {
 			light: "#adc0dd",
